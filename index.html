@@ -1,150 +1,77 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goda Emad - Junior Data Analyst Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #121212;
-            color: #e0e0e0;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(to right, #1e3a8a, #3b82f6);
-            padding: 80px 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 3.5em;
-        }
-        .subtitle {
-            font-size: 1.4em;
-            opacity: 0.9;
-        }
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            color: #60a5fa;
-            border-bottom: 2px solid #334155;
-            padding-bottom: 10px;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-        }
-        .skill {
-            background: #1e40af;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-weight: bold;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .project-card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-        .project-card img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #0f172a;
-            margin-top: 60px;
-        }
-        a {
-            color: #60a5fa;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul.cert-list {
-            list-style: none;
-            padding: 0;
-            text-align: right;
-        }
-        ul.cert-list li {
-            margin: 10px 0;
-            font-size: 1.1em;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Goda Emad | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>مرحبا! أنا Goda Emad</h1>
-        <p class="subtitle">Junior Data Analyst | Python • SQL • Power BI • Streamlit • AI Agents</p>
+
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <img src="assets/profile.jpg" class="profile-img" alt="Goda Emad">
+            <h1>Goda Emad</h1>
+            <p class="subtitle">Junior Data Analyst | Python • SQL • Power BI • Streamlit • AI Agents</p>
+        </div>
     </header>
 
+    <section class="about card">
+        <h2>من أنا</h2>
+        <p>
+            محلل بيانات شغوف بتحويل البيانات المعقدة إلى قرارات واضحة وقابلة للتنفيذ.
+            لدي خبرة في بناء Dashboards احترافية وتحليل البيانات باستخدام Python و SQL و Power BI،
+            بالإضافة إلى تطوير تطبيقات تحليلية تفاعلية عبر Streamlit.
+        </p>
+    </section>
+
     <section>
-        <h2>مهاراتي الرئيسية</h2>
+        <h2>المهارات</h2>
         <div class="skills">
-            <div class="skill">Python (Pandas, NumPy)</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Power BI (PL-300)</div>
-            <div class="skill">Streamlit Dashboards</div>
-            <div class="skill">Data Visualization</div>
-            <div class="skill">K-Means Clustering</div>
-            <div class="skill">Azure Data Fundamentals</div>
-            <div class="skill">Google Data Analytics</div>
+            <span>Python (Pandas, NumPy)</span>
+            <span>SQL</span>
+            <span>Power BI (PL-300)</span>
+            <span>Streamlit</span>
+            <span>Data Visualization</span>
+            <span>Machine Learning Basics</span>
+            <span>Azure DP-900</span>
         </div>
     </section>
 
     <section>
-        <h2>أبرز مشاريعي</h2>
+        <h2>المشاريع</h2>
         <div class="projects">
+
             <div class="project-card">
-                <img src="https://via.placeholder.com/600x300/1e293b/60a5fa?text=Samsung+Agent+Dashboard" alt="Samsung Agent Dashboard">
                 <h3>Samsung Market Intelligence Agent</h3>
-                <p>تطبيق Agentic AI لجمع أسعار هواتف Samsung في الوقت الفعلي + توصيات ذكية، يوفر وقت البحث اليدوي ويساعد في اتخاذ قرارات تسعير سريعة. (Streamlit + Python)</p>
-                <a href="https://github.com/Goda-Emad/Samsung-Market-Intelligence-Agent" target="_blank">عرض على GitHub</a>
+                <p>Agentic AI يجمع أسعار Samsung لحظيًا ويقدم توصيات تسعير ذكية.</p>
+                <a href="https://github.com/Goda-Emad/Samsung-Market-Intelligence-Agent" target="_blank">GitHub</a>
             </div>
+
             <div class="project-card">
-                <img src="https://via.placeholder.com/600x300/1e293b/60a5fa?text=FC+Barcelona+Dashboard" alt="FC Barcelona Dashboard">
                 <h3>FC Barcelona Performance Dashboard</h3>
-                <p>تحليل أداء الفريق واللاعبين عبر المواسم، مع insights عن الإحصائيات والتكتيكات. (Python + Dashboard تفاعلي)</p>
-                <a href="https://github.com/Goda-Emad/FC-Barcelona-Performance-Intelligence-Dashboard" target="_blank">عرض على GitHub</a>
+                <p>تحليل تفاعلي لأداء الفريق واللاعبين عبر المواسم.</p>
+                <a href="https://github.com/Goda-Emad/FC-Barcelona-Performance-Intelligence-Dashboard" target="_blank">GitHub</a>
             </div>
-            <!-- يمكنك إضافة المزيد من الكروت هنا لاحقًا -->
+
         </div>
     </section>
 
-    <section>
+    <section class="card">
         <h2>الشهادات</h2>
-        <ul class="cert-list">
+        <ul>
             <li>Google Data Analytics Professional Certificate</li>
-            <li>Microsoft Power BI Data Analyst Associate (PL-300) - قيد الإكمال</li>
-            <li>Microsoft Azure Data Fundamentals (DP-900) - قيد الإكمال</li>
+            <li>Microsoft Power BI PL-300 (In Progress)</li>
+            <li>Azure Data Fundamentals DP-900 (In Progress)</li>
         </ul>
     </section>
 
     <footer>
-        <p>تواصل معي للوظائف أو الفريلانس:</p>
-        <p>
-            <a href="https://www.linkedin.com/in/goda-emad" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/Goda-Emad" target="_blank">GitHub</a> | 
-            goda.emad@example.com  <!-- ← غير ده لإيميلك الحقيقي -->
-        </p>
-        <p>Open to Junior Data Analyst roles | Freelance Power BI & Python projects</p>
+        <a href="https://www.linkedin.com/in/goda-emad" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Goda-Emad" target="_blank">GitHub</a>
+        <p>Open to Junior Data Analyst Roles & Freelance Projects</p>
     </footer>
+
 </body>
 </html>
