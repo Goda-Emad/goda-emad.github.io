@@ -60,6 +60,11 @@
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
+        .project-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
         footer {
             text-align: center;
             padding: 40px;
@@ -72,6 +77,15 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+        ul.cert-list {
+            list-style: none;
+            padding: 0;
+            text-align: right;
+        }
+        ul.cert-list li {
+            margin: 10px 0;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -99,33 +113,38 @@
         <h2>أبرز مشاريعي</h2>
         <div class="projects">
             <div class="project-card">
+                <img src="https://via.placeholder.com/600x300/1e293b/60a5fa?text=Samsung+Agent+Dashboard" alt="Samsung Agent Dashboard">
                 <h3>Samsung Market Intelligence Agent</h3>
-                <p>تطبيق Agentic AI لجمع أسعار هواتف Samsung في الوقت الفعلي + توصيات ذكية (Streamlit + Python).</p>
+                <p>تطبيق Agentic AI لجمع أسعار هواتف Samsung في الوقت الفعلي + توصيات ذكية، يوفر وقت البحث اليدوي ويساعد في اتخاذ قرارات تسعير سريعة. (Streamlit + Python)</p>
                 <a href="https://github.com/Goda-Emad/Samsung-Market-Intelligence-Agent" target="_blank">عرض على GitHub</a>
             </div>
             <div class="project-card">
+                <img src="https://via.placeholder.com/600x300/1e293b/60a5fa?text=FC+Barcelona+Dashboard" alt="FC Barcelona Dashboard">
                 <h3>FC Barcelona Performance Dashboard</h3>
-                <p>تحليل أداء الفريق واللاعبين عبر المواسم (Python + Dashboard تفاعلي).</p>
+                <p>تحليل أداء الفريق واللاعبين عبر المواسم، مع insights عن الإحصائيات والتكتيكات. (Python + Dashboard تفاعلي)</p>
                 <a href="https://github.com/Goda-Emad/FC-Barcelona-Performance-Intelligence-Dashboard" target="_blank">عرض على GitHub</a>
             </div>
-            <!-- أضف مشاريع أخرى هنا لاحقًا -->
+            <!-- يمكنك إضافة المزيد من الكروت هنا لاحقًا -->
         </div>
     </section>
 
     <section>
         <h2>الشهادات</h2>
-        <p>Google Data Analytics Professional Certificate</p>
-        <p>Microsoft Power BI Data Analyst Associate (PL-300) - قيد الإكمال</p>
-        <p>Azure Data Fundamentals (DP-900) - قيد الإكمال</p>
+        <ul class="cert-list">
+            <li>Google Data Analytics Professional Certificate</li>
+            <li>Microsoft Power BI Data Analyst Associate (PL-300) - قيد الإكمال</li>
+            <li>Microsoft Azure Data Fundamentals (DP-900) - قيد الإكمال</li>
+        </ul>
     </section>
 
     <footer>
-        <p>تواصل معي:</p>
+        <p>تواصل معي للوظائف أو الفريلانس:</p>
         <p>
             <a href="https://www.linkedin.com/in/goda-emad" target="_blank">LinkedIn</a> | 
             <a href="https://github.com/Goda-Emad" target="_blank">GitHub</a> | 
-            goda.emad@email.com (غير الإيميل ده لإيميلك الحقيقي)
+            goda.emad@example.com  <!-- ← غير ده لإيميلك الحقيقي -->
         </p>
+        <p>Open to Junior Data Analyst roles | Freelance Power BI & Python projects</p>
     </footer>
 </body>
 </html>
